@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Место | Россия</title>
+</head>
+
+<body class="page">
+    <div class="page__container">
+        <!--Шапка сайта-->
+      <header class="header">
+        <img src="./images/header__logo.svg" alt="Место в России." class="header__logo">
+      </header>
+       
+      <main class="content">
+        <!--Начало секции "профиль" -->
+        <section class="profile">
+          <div class="profile__about">
+                <img src="./images/kusto.jpg" alt="Жак-Ив Кусто" class="profile__photo">
+                <div class="profile__info">
+                    <div class="profile__description">
+                        <h1 class="profile__name">Жак-Ив Кусто</h1>
+                        <button type="button" class="profile__edit link"></button>
+                    </div>
+                    <p class="profile__job">Исследователь океана</p>
+                </div>
+            </div>
+            <button type="button" class="profile__add-card link"></button>
+        </section>
+          <!--Начало блока с карточками-->
+            <ul class="places">
+
+
+            </ul>
+        </main>
+        <!--Начало подвала сайта-->
+        <footer class="footer">
+          <p class="footer__text">&COPY; 2021 Mesto Russia</p>
+        </footer>
+        <!--конец подвала сайта-->
+        <!--Начало всплывающего окна "редактирование профиля"-->
+        <div class="popup">
+            <div class="popup__container">
+                <button class="popup__button-close link" type="button"></button>
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <form class="popup__form">
+                    <input class="popup__input popup__input_el_name" type="text" name="profile-name" placeholder="Имя">
+                    <input class="popup__input popup__input_el_job" type="text" name="profile-job" placeholder="О себе">
+                    <button class="popup__button-save link" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
+        <!--Конец всплывающего окна "редактирование профиля-->
+        <!--Начало всплывающего окна "добавление карточки"-->
+        <div class="popup popup_add-card">
+          <div class="popup__container popup__container_card">
+            <button class="popup__button-close link" type="button"></button>
+            <h2 class="popup__title">Новое место</h2>
+              <form class="popup__form">
+                <input class="popup__input popup__input_el_card-name" type="text" name="card-name" placeholder="Название">
+                <input class="popup__input popup__input_el_card-link" type="text" name="card-link" placeholder="Ссылка на картинку">
+                <button  class="popup__button-save link" type="submit">Создать</button>
+              </form>
+          </div>
+        </div>
+        <!--Конец всплывающего окна "добавление карточки"-->
+        <!--Начало попапа с открывающейся картинкой-->
+        <div class="popup popup_open-picture">
+            <div class="popup__container popup__container_picture">
+                <button type="button" class="popup__button-close link"></button>
+                <img class="popup__picture" src="#" alt="Картинка">
+                <h3 class="popup__description"></h3>
+            </div>
+        </div>
+        <!--Конец попапа с открывающейся картинкой-->
+      </div>
+      
+        <!--Начало блока с template элементами-->
+        <template id="card-template">
+          <li class="card">
+            <button type="button" class="card__button-delete link"></button>
+            <img src="#" alt="Картинка" class="card__image">
+            <div class="card__info">
+              <h2 class="card__name"></h2>
+              <button type="button" class="card__button-like link"></button>
+            </div>
+          </li>
+        </template>
+        <!--Конец блока с template элементами-->
+<script src="./js/script.js"></script>
+</body>
+</html>
