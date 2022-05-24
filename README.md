@@ -10,5 +10,5 @@
 
 
 **Ссылка на GitHub Pages**
-* URL:
+URL:
 https://tatianakud.github.io/Work-1.0/
