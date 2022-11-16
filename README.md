@@ -11,4 +11,4 @@
 
 **Ссылка на GitHub Pages**
 
-https://tatianakud.github.io/Work-1.0/
+https://tatianakud.github.io/Project-3.0/
